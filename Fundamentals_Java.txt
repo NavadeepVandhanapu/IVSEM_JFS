@@ -1,0 +1,119 @@
+Create one folder in C:\ or D:\2026SUB1
+
+Core Java
+-----------
+1) Hello programming
+Passing input into java program into 2 ways:
+  a) Command line arguments
+  b) STDIN (Standard Input) using Scanner class
+2) Data types
+    Primitive data types
+type      size    range     	   default value
+byte       1     -128 to 127             0
+short      2    -32768 to 32767          0
+int        4                     	 0
+long       8                             0
+float      4                             0.0
+double     8                      	 0.0
+char       2                      	\u0000
+boolean    1                      	false
+      
+    Secondary data types
+class like String, System, Date etc
+(both predefined and user defined classes)
+array
+  
+3) Type casting:
+How to convert int to other primtive types
+int i=10;
+// narrow casting; assinging higher value to lower value
+byte b=(byte)i; 
+short s=(short)i;
+long l=i; // wide casting ; lower to higher
+float f=i;
+double d=i;
+
+How to convert long to other primtive types
+long l1=12L;
+byte b1=(byte)i; 
+short s1=(short)i;
+int i1=(int)l1; 
+float f1=(float)l1;
+double d1=l1;
+
+How to convert double to other primitive types
+double d2=10.24;
+byte b2=(byte)d2; 
+short s2=(short)d2;
+int i2=(int)d2; 
+long l2=(int)d2; 
+float f2=(float)d2;
+
+4) Type conversion using wrapper class
+How to convert String to int
+String str="10";
+int i3=Integer.parseInt(str);
+long l3=Long.parseLong(str);
+float f3=Float.parseFloat(str);
+double d3=Double.parseDouble(str);
+
+How to convert int to double:
+int i4=10;
+Integer in=new Integer(i);
+double d4=in.doubleValue()
+
+datatypes-wrapper classes
+-----------------------------
+byte    short  int    long    float    double    char    boolean
+Byte    Short  Integer  Long  Float  Double    Character  Boolean
+
+
+
+Introduction to Java API and Java API Documentation:
+---------------------------------------------------
+Java API is organised into packages and classes
+
+
+Java.lang
+	System, String, StringBuffer, StringBuilder, Math ,Byte ,Short, Integer, Float , Double , All Exception classes(Throwable, Error , Exception, RuntimeException Subclasses) , Runnable, Thread, Object, (Root of all java classes) , Compiler , Runtime, Process, Class, ClassLoader, Cloneable,Comparable
+
+
+Java.util
+	Legacy Classes: Vector, Dictionary , HashTable ,Enumeration , Stack ,Queue
+	Collection Classes: Iterable , Collection , List, Set , Map, ArrayList, LinkedList , HashSet, LinkedHashSet, TreeSet, HashMap, LinkedHashMap, 				    TreeMap, Iterator, ListIterator  
+	Misc Classes: Collections , Arrays , Date , Gregorian Calendar , Scanner , StringTokenizer, Locale , ResourceBundle , Timer , TimerTask , Comparator
+
+
+What is the difference between Java API & Java Documentation?
+Java software JDK comes with java tools and java API
+
+java tools: javac.exe , javax.exe 
+
+java API: Java predefined classes and interfaces spreaded across
+packages(java.lang, java.util , java.io , java.net , java.math, java.sql)
+
+
+API documentation is a HTML file help to refer packages, classes , their variable , constructors and methods
+
+
+
+What is a List in java?
+A List is a collection that:
+	-> Stores the multiple values
+	-> Maintains the insertion order
+	-> Allows Duplicate values
+List is an interface that is present in java.util package.
+
+Important List Methods:
+	1) Add Method: list.add(10);
+	2) Add (index,element): list.add(2,10);
+	3) Access Method(get(index)): list.get();
+	4) Replace element (set(idx,value)): list.set(1,25);
+	5) Remove element (remove(idx), remove(Integer.valueOf(value))): list.remove(0);// idx
+									 list.remove(Integer.valueOf(20)); //by value
+	6) Size (size(list)): list.size();
+	7) Contains: list.contains();
+	8) isEmpty: list.isEmpty();
+
+
+Looping Through List:
